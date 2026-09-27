@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next-Gen Python Developer | FastAPI + AI Backends</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 25px rgba(16, 185, 129, 0.25); }
+      50% { box-shadow: 0 0 45px rgba(16, 185, 129, 0.55); }
+    }
+    .animate-fade-in-up {
+      opacity: 0;
+      animation: fadeInUp 0.9s ease-out forwards;
+    }
+    .animate-float {
+      animation: float 5s ease-in-out infinite;
+    }
+    .delay-100 { animation-delay: 0.15s; }
+    .delay-200 { animation-delay: 0.3s; }
+    .delay-300 { animation-delay: 0.45s; }
+    .delay-400 { animation-delay: 0.6s; }
+    .glow-card:hover {
+      animation: pulse-glow 2.2s infinite;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans overflow-x-hidden">
+
+  <!-- Floating Background -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+    <div class="absolute top-16 left-8 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-16 right-8 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl animate-float" style="animation-delay: 1.8s;"></div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center px-6 py-24">
+    <div class="max-w-4xl text-center">
+      
+      <!-- Avatar / Photo -->
+      <div class="mb-8 animate-fade-in-up">
+        <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 p-1 shadow-2xl shadow-emerald-500/20">
+          <img src="profile.png" alt="L3RIN" class="w-full h-full rounded-full object-cover" />
+        </div>
+      </div>
+
+      <p class="text-emerald-400 font-medium mb-4 tracking-widest uppercase text-sm animate-fade-in-up delay-100">
+        Next-Gen Remote Developer
+      </p>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 animate-fade-in-up delay-200">
+        Hi, I'm <span class="text-emerald-400">L3RIN</span><br />
+        I build <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">next-generation</span><br />
+        FastAPI + AI backends
+      </h1>
+      <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto animate-fade-in-up delay-300">
+        Modern, high-performance APIs and intelligent features for startups and agencies who want to move fast without sacrificing quality.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-400">
+        <a href="#contact" class="bg-emerald-500 hover:bg-emerald-400 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/40">
+          Book a Free Call
+        </a>
+        <a href="#work" class="border border-gray-700 hover:border-emerald-500 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+          Explore My Work
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do -->
+  <section id="work" class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fade-in-up">What I Deliver</h2>
+      <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto animate-fade-in-up delay-100">
+        Next-gen tools built with clean architecture and modern Python.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glow-card bg-gray-900/80 backdrop-blur p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-3">
+          <div class="text-emerald-400 text-4xl mb-5"><i class="fas fa-bolt"></i></div>
+          <h3 class="text-xl font-semibold mb-3">FastAPI Backends</h3>
+          <p class="text-gray-400 leading-relaxed">Lightning-fast, type-safe APIs with automatic documentation. Built for scale and clarity.</p>
+        </div>
+        <div class="glow-card bg-gray-900/80 backdrop-blur p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-3">
+          <div class="text-emerald-400 text-4xl mb-5"><i class="fas fa-robot"></i></div>
+          <h3 class="text-xl font-semibold mb-3">AI-Powered Features</h3>
+          <p class="text-gray-400 leading-relaxed">LLM endpoints, intelligent automation, and next-gen AI tools your product can actually use.</p>
+        </div>
+        <div class="glow-card bg-gray-900/80 backdrop-blur p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-3">
+          <div class="text-emerald-400 text-4xl mb-5"><i class="fas fa-rocket"></i></div>
+          <h3 class="text-xl font-semibold mb-3">Rapid Delivery</h3>
+          <p class="text-gray-400 leading-relaxed">Most projects ship in 2–3 weeks — clean code, proper docs, and production-ready from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 px-6 bg-gray-900/40">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Client Feedback</h2>
+      <p class="text-gray-400 text-center mb-16">Real results from next-gen projects</p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Testimonial cards remain the same -->
+        <div class="bg-gray-900/70 backdrop-blur p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/40 transition-all duration-500 hover:-translate-y-2">
+          <div class="flex text-amber-400 mb-5 text-lg gap-1">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            “Delivered a clean, next-gen FastAPI backend with AI endpoints ahead of schedule. The documentation was excellent and the architecture was built to scale.”
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center font-bold">JK</div>
+            <div>
+              <p class="font-semibold">James K.</p>
+              <p class="text-sm text-gray-500">SaaS Founder</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/70 backdrop-blur p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/40 transition-all duration-500 hover:-translate-y-2">
+          <div class="flex text-amber-400 mb-5 text-lg gap-1">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            “Turned our rough AI idea into a polished, production-ready API. Communication was clear and the final result felt truly next-generation.”
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center font-bold">SR</div>
+            <div>
+              <p class="font-semibold">Sarah R.</p>
+              <p class="text-sm text-gray-500">Agency Owner</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/70 backdrop-blur p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/40 transition-all duration-500 hover:-translate-y-2">
+          <div class="flex text-amber-400 mb-5 text-lg gap-1">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            “Solid technical skills and modern approach. The FastAPI service was well-structured, fast, and ready for real users immediately.”
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center font-bold">MT</div>
+            <div>
+              <p class="font-semibold">Michael T.</p>
+              <p class="text-sm text-gray-500">Indie Hacker</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/70 backdrop-blur p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/40 transition-all duration-500 hover:-translate-y-2">
+          <div class="flex text-amber-400 mb-5 text-lg gap-1">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            “Great experience working together. He understands both the technical and product side, and delivered a reliable AI-powered endpoint we still use daily.”
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center font-bold">AL</div>
+            <div>
+              <p class="font-semibold">Aisha L.</p>
+              <p class="text-sm text-gray-500">Product Lead</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-28 px-6">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-5xl font-bold text-center mb-4">
+        Let’s build something <span class="text-emerald-400">next-gen</span>
+      </h2>
+      <p class="text-gray-400 text-center mb-12">
+        Fill the form below or email me directly. I usually reply within a few hours.
+      </p>
+
+      <form action="https://formspree.io/f/xgavnqwa" method="POST" class="space-y-6 bg-gray-900/60 backdrop-blur p-8 rounded-2xl border border-gray-800">
+        <div>
+          <label class="block text-sm font-medium mb-2">Your Name</label>
+          <input type="text" name="name" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-500 transition">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-2">Email</label>
+          <input type="email" name="email" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-500 transition">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-2">What are you building?</label>
+          <textarea name="message" rows="5" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-500 transition"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-semibold py-4 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/30">
+          Send Message
+        </button>
+      </form>
+
+      <p class="text-center text-gray-500 text-sm mt-8">
+        Or reach me on <a href="https://www.linkedin.com/in/enoch-o-2503b0269/" class="text-emerald-400 hover:underline">LinkedIn</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-gray-600 text-sm border-t border-gray-900">
+    <p>© 2026 L3RIN · Next-Gen Python • FastAPI • AI Backends</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in-up');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.animate-fade-in-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
